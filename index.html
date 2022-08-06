@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Map-API</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="navigation">
+        <img class="logo" src="./image 1.png" alt="">
+    </div>
+
+
+    <div class="container">
+
+        <center>
+            <p class="title">Let's calculate <bold style="font-weight:bold;">distance</bold> from Google maps</p>
+        </center>
+
+        <div class="flex-box">
+
+            <div class="main">
+
+                Origin
+                <br>
+                <input id="from" type="text" placeholder="Enter origin">
+                <br>
+                <button class="btn btn-info btn-lg " onclick="calcRoute();">Calculate<i class="fas fa-map-signs"></i></button>
+                <br>
+                Destination
+                <br>
+                <input id="to" style="margin-bottom: 10% ;" type="text" placeholder="Enter Destination">
+                <br>
+
+                <div class="output">
+
+                    <div class="box-1" style="background-color: white; padding: 1.5rem;">
+                        <span class="distance" style="font-size: 20px; margin-top: 5px;">Distance</span>
+                        <span class="km" style="padding-left:40%; font-size: 30px; color: #0079FF; ">454&nbsp;kms</span>
+                    </div>
+
+                    <div class="box-2" style=" padding: 1.5rem;">
+                        <span class="op-msg" id="output">The distance between (in the javascript)</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.37881859279!2d72.67171931497158!3d23.229298184848716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b0e0167d8e9%3A0x9777963dd1f06126!2sBAPS%20Akshardham%20Temple%20%7C%20Gandhinagar!5e0!3m2!1sen!2sin!4v1659687873948!5m2!1sen!2sin"
+                    width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+            <div id="googleMap">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE8-06Xv8BQk2pA9fhSa6nOartz-Tg7tg&callback=initMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
