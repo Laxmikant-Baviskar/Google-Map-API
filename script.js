@@ -1,5 +1,8 @@
 //javascript.js
 //set map options
+
+const kmMsg= document.querySelector(".km");
+
 var myLatLng = { lat: 38.3460, lng: -0.4907 };
 var mapOptions = {
     center: myLatLng,
@@ -39,7 +42,10 @@ function calcRoute() {
             const output = document.querySelector('#output');
             // output.innerHTML = "<div class='alert-info'>From: " + document.getElementById("from").value + ".<br />To: " + document.getElementById("to").value + ".<br /> Driving distance <i class='fas fa-road'></i> : " + result.routes[0].legs[0].distance.text + ".<br />Duration <i class='fas fa-hourglass-start'></i> : " + result.routes[0].legs[0].duration.text + ".</div>";
 
-            output.innerHTML = "<div> The distance between " + document.getElementById("from").value + "&" + document.getElementById("to").value + "=" + result.routes[0].legs[0].distance.text + "kms. </div>"
+            output.innerHTML = "<div> The distance between " + document.getElementById("from").value + " & " + document.getElementById("to").value + " = " + result.routes[0].legs[0].distance.text + ". </div>"
+
+            const manResult= result.routes[0].legs[0].distance.text;
+            kmMsg.innerHTML= manResult;
 
             //display route
             directionsDisplay.setDirections(result);
