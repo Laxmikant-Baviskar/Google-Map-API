@@ -31,7 +31,7 @@ function calcRoute() {
         origin: document.getElementById("from").value,
         destination: document.getElementById("to").value,
         travelMode: google.maps.TravelMode.DRIVING, //WALKING, BYCYCLING, TRANSIT
-        unitSystem: google.maps.UnitSystem.IMPERIAL
+        unitSystem: google.maps.UnitSystem.METRIC
     }
 
     //pass the request to the route method
@@ -42,7 +42,7 @@ function calcRoute() {
             const output = document.querySelector('#output');
             // output.innerHTML = "<div class='alert-info'>From: " + document.getElementById("from").value + ".<br />To: " + document.getElementById("to").value + ".<br /> Driving distance <i class='fas fa-road'></i> : " + result.routes[0].legs[0].distance.text + ".<br />Duration <i class='fas fa-hourglass-start'></i> : " + result.routes[0].legs[0].duration.text + ".</div>";
 
-            output.innerHTML = "<div> The distance between " + document.getElementById("from").value + " & " + document.getElementById("to").value + " = " + result.routes[0].legs[0].distance.text + ". </div>"
+            output.innerHTML = "<div> The distance between " + document.getElementById("from").value.bold() + " & " + document.getElementById("to").value.bold() + " = " + result.routes[0].legs[0].distance.text.bold() + ". </div>";
 
             const manResult= result.routes[0].legs[0].distance.text;
             kmMsg.innerHTML= manResult;
