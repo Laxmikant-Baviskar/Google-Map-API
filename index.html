@@ -13,6 +13,9 @@
     <!-- new links  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
+    <!-- work sans font link -->
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -32,19 +35,25 @@
 
             <div class="main">
 
-                Origin
-                <br>
-                <i-1 class="fa fa-map-marker fa-2x fa-fw" aria-hidden="true"></i-1>
-                <input id="from" style="margin-bottom: 2% ;" type="text" placeholder="Enter origin">
-                <br>
-                <button class="btn btn-info btn-lg " onclick="calcRoute();">Calculate</button>
-                <br>
-                Destination
-                <br>
-
-                <i-2 class="fa fa-map-marker fa-2x fa-fw" aria-hidden="true"></i-2>
-                <input id="to" style="margin-bottom: 10% ;" type="text" placeholder="Enter Destination">
-                <br>
+                <div class="input">
+                    <ip-1>Origin
+                        <br>
+                        <i-1 class="fa fa-map-marker fa-2x fa-fw" aria-hidden="true"></i-1>
+                        <input id="from" style="margin-bottom: 2% ;" type="text" placeholder="Enter origin">
+                    </ip-1>
+                    <br>
+                        <button class="btn btn-info btn-lg " onclick="calcRoute();">Calculate</button>
+                    <br>
+                    <ip-2>
+                        Destination
+                        <br>
+                        <div class="ip-2-box">
+                            <i-2 class="fa fa-map-marker fa-2x fa-fw" aria-hidden="true"></i-2>
+                            <input id="to" style="margin-bottom: 10% ;" type="text" placeholder="Enter Destination">
+                        </div>
+                        
+                    </ip-2>
+                </div>
 
                 <div class="output">
 
