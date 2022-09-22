@@ -1,5 +1,4 @@
 //javascript.js
-//set map options
 
 const kmMsg= document.querySelector(".km");
 
@@ -15,6 +14,7 @@ var mapOptions = {
 var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
 //create a DirectionsService object to use the route method and get a result for our request
+
 var directionsService = new google.maps.DirectionsService();
 
 //create a DirectionsRenderer object which we will use to display the route
@@ -40,24 +40,27 @@ function calcRoute() {
 
             //Get distance and time
             const output = document.querySelector('#output');
-            // output.innerHTML = "<div class='alert-info'>From: " + document.getElementById("from").value + ".<br />To: " + document.getElementById("to").value + ".<br /> Driving distance <i class='fas fa-road'></i> : " + result.routes[0].legs[0].distance.text + ".<br />Duration <i class='fas fa-hourglass-start'></i> : " + result.routes[0].legs[0].duration.text + ".</div>";
 
-            // output.innerHTML = "<div> The distance between " + document.getElementById("from").value.bold() + " & " + document.getElementById("to").value.bold() + " = " + result.routes[0].legs[0].distance.text.bold() + ". </div>";
+
             // ==== main output =======
             output.innerHTML = "<div> The distance between " + document.getElementById("from").value.bold() + " & " + document.getElementById("to").value.bold() + " is " + result.routes[0].legs[0].distance.text.bold() + "." + "<br />Duration  : " + result.routes[0].legs[0].duration.text.bold() + ".</div>";
+
             const manResult= result.routes[0].legs[0].distance.text;
             kmMsg.innerHTML= manResult;
 
             //display route
             directionsDisplay.setDirections(result);
-        } else {
+        } 
+        else 
+        {
             //delete route from map
             directionsDisplay.setDirections({ routes: [] });
-            //center map in London
             map.setCenter(myLatLng);
 
+
             //show error message
-            output.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Could not retrieve driving distance.</div>";
+            output.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i>There are no roads, Better to go through Plane.</div>";
+
         }
     });
 
