@@ -140,3 +140,98 @@ ip-2{
 
 }
 
+/* ------------ Output Message ------------- */
+
+
+.box-1 {
+  background-color: white;
+  padding: 1.5rem;
+}
+.distance {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.km {
+  padding-left: 40%;
+  font-size: 30px;
+  color: #0079ff;
+  font-weight: bold;
+}
+.box-2 {
+  padding: 1.5rem;
+}
+.op-msg {
+  font-size: 0.9rem;
+}
+
+
+/* ---------- for responsive web design ---------- */
+
+
+@media (max-width: 400px) {
+  .flex-box {
+    flex-direction: column;
+  }
+
+  #googleMap {
+    margin-top: 10%;
+    /* margin-left: -10%; */
+    margin-right: -20px;
+    margin-left: -70px;
+    margin-bottom: 30%;
+    /* margin: 5%; */
+    /* float: right; */
+    /* border: none; */
+    /* box-shadow: 0px 0px 70px rgb(209, 209, 209); */
+    /* box-shadow: #949494 0px 20px 20px -10px; */
+
+    min-width: 110vw;
+    height: 50vh;
+  }
+  button {
+    margin-top: 4%;
+  }
+
+  .output {
+    width: 90vw;
+    border-radius: 10px;
+    border: 1px solid rgb(225, 225, 225);
+  }
+  .box-1 {
+    background-color: white;
+    padding: 1.5rem;
+  }
+  .distance {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .km {
+    padding-left: 30%;
+    font-size: 20px;
+    color: #0079ff;
+    font-weight: bold;
+  }
+  .box-2 {
+    padding: 1.5rem;
+  }
+  .op-msg {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 30vw;
+    padding: 0%;
+    padding-left: 5%;
+  }
+
+  .navigation {
+    width: 120%;
+    margin: 5%;
+    /* width:initial; */
+    background-color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    margin: -10px;
+    padding: 10px;
+  }
+}
+
