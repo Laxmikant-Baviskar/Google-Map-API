@@ -1,6 +1,6 @@
 # Distance & Direction Tracker 🌏
 
-### 🛠 Built using Vanilla JS, HTML, CSS & Goggle API
+### 🛠 Built using Vanilla JS, HTML, CSS & Google API
 
 ## 📌 Demo : https://distance-calcuator-laxmikant.netlify.app/
 
