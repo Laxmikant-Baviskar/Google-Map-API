@@ -3,7 +3,7 @@ Calculates the distance between two places using google map API's &amp; also sho
 
 ### 🛠 Built using Vanilla JS, HTML and CSS
 
-## 📍 Demo : https://stock-profit-loss-laxmikant.netlify.app/
+## 📍 Demo : https://distance-calcuator-laxmikant.netlify.app/
 
 ## 📍 Repo : https://github.com/Laxmikant-Baviskar/Stock-Profit-Loss
 
