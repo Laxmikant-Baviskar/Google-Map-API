@@ -5,7 +5,7 @@ Calculates the distance between two places using google map API's &amp; also sho
 
 ## 📍 Demo : https://distance-calcuator-laxmikant.netlify.app/
 
-## 📍 Repo : https://github.com/Laxmikant-Baviskar/Stock-Profit-Loss
+## 📍 Repo : https://github.com/Laxmikant-Baviskar/Google-Map-API
 
 ### ⏩ What does this app do?
 
