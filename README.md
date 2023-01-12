@@ -25,4 +25,4 @@ Calculates the distance between two places using google map API's &amp; also sho
 
 #### ● Snapshot of App ↓
 
-![image](https://user-images.githubusercontent.com/99134289/183124732-c9f309a5-365d-4b51-95c8-a8629484933f.png)
+![Screenshot (399)](https://user-images.githubusercontent.com/99134289/212142732-9168d4c7-b8f8-4bb0-8266-fa6db312713a.png)
