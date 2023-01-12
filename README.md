@@ -1,27 +1,25 @@
-# Google-Map-API
+# Distance & Direction Tracker 🌏
 Calculates the distance between two places using google map API's &amp; also show the direction on  the map.
 
 ### 🛠 Built using Vanilla JS, HTML and CSS
 
-## 📍 Demo : https://distance-calcuator-laxmikant.netlify.app/
+## ◼️ Demo : https://distance-calcuator-laxmikant.netlify.app/
 
-## 📍 Repo : https://github.com/Laxmikant-Baviskar/Google-Map-API
+## ◼️ Repo : https://github.com/Laxmikant-Baviskar/Google-Map-API
 
-### ⏩ What does this app do?
+### ⏩ What does this app do ? 🤔
 
 #### ● This app takes the following input : 
 
-  → user's stock price at the time of Buy
+  📍 Origin source Place (From) 
 
-  → total  quantity of stock
-
-  →sell price of the stock
-
+  📍 Destination Place (To)
+  
 #### ●  Output :
 
-  → Calculate profit or loss and the profit or loss percentage
-
-  → The app changes the theme of the app if the profit or loss percentage is greater than 50%
+  1. Calculate the total ditance in kilometers (km) 🚗 
+  2. Calculate the approximate duration time to reach the destination ⌛
+  3. Locate the direction on the Google map 🗺 
 
 #### ● Snapshot of App ↓
 
