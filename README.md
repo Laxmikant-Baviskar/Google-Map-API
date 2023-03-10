@@ -24,4 +24,4 @@
 
 #### 📷 Snapshot of App ↓
 
-![Screenshot (399)](https://user-images.githubusercontent.com/99134289/212142732-9168d4c7-b8f8-4bb0-8266-fa6db312713a.png)
+![Screenshot (399)](https://user-images.githubusercontent.com/99134289/212142732-9168d4c7-b8f8-4bb0-8266-fa6db312713a.png) 
